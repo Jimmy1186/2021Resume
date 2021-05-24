@@ -1,10 +1,12 @@
 import React from "react";
 import HomePage from "./HomePage";
-import Upstream from "../content/Upstream";
+import Aboutme from "../content/AboutMe";
+
 import {
     Switch,
     Route,
   } from "react-router-dom";
+import AllContent from "../content/AllContent";
 
 function Main() {
   return (
@@ -12,8 +14,11 @@ function Main() {
       <main>
         <div className="wrapper"> 
             <Switch>
-              <Route path="/upstream">
-                  <Upstream />
+              <Route path="/Aboutme">
+                  <Aboutme />
+              </Route>
+              <Route path="/AllContent">
+                  <AllContent />
               </Route>
               <Route path="/">
                   <HomePage />

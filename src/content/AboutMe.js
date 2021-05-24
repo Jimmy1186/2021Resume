@@ -1,11 +1,10 @@
-import React from 'react'
-import team from './../image/gunguys.jpg'
-
-function HomePage() {
-    return (
-        <>
-       <picture>
-        <img className="photo" src={team} alt="槍隊合照" />
+import React from "react";
+import river from "./../image/riverguys.jpg";
+function Aboutme() {
+  return (
+    <>
+      <picture>
+        <img className="photo" src={river} alt="我與朋友溯溪" />
         <p>我與朋友溯溪</p>
       </picture>
       <h1 className="title">關於我</h1>
@@ -14,8 +13,8 @@ function HomePage() {
         <br />
         這邊放一些我平常不敢發在社群軟體上的廢文哈哈。
       </article>
-        </>
-    )
+    </>
+  );
 }
 
-export default HomePage
+export default Aboutme;
