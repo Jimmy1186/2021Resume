@@ -7,6 +7,7 @@ import {
     Route,
   } from "react-router-dom";
 import AllContent from "../content/AllContent";
+import NoFriend from "../content/NoFriend";
 
 function Main() {
   return (
@@ -19,6 +20,9 @@ function Main() {
               </Route>
               <Route path="/AllContent">
                   <AllContent />
+              </Route>
+              <Route path="/NoFriend">
+                  <NoFriend />
               </Route>
               <Route path="/">
                   <HomePage />

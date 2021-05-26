@@ -93,6 +93,11 @@ main {
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  overflow-y: auto;
+
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .wrapper {
@@ -101,13 +106,13 @@ main {
   flex-direction: column;
 }
 .photo {
-  width: 45vw;
+  width: 100%;
+  max-width: 1000px;
   height: auto;
 }
-picture{
+figure{
   padding-top: 10vh;
   align-self: center;
-  width: 45vw;
   height: auto;
   padding-bottom: 3em;
 }
@@ -117,9 +122,19 @@ picture{
   font-size: 1.5em;
   line-height: 3vh;
 }
+@media screen and (max-width: 1400px){
+  .content {
+    font-size: 1.3em;
+    line-height: 4vh;
+}
+}
+
 @media screen and (max-width: 1024px){
   .photoName {
     font-size: .6em;
+  }
+  .photo {
+    max-width: 512px;
   }
 }
 
@@ -149,10 +164,9 @@ picture{
   main {
     display: flex;
     flex-direction: column;
-    padding: 2em;
   }
 
-  picture{
+  figure{
      max-width: 80vw;
      padding-bottom: 0;
      padding-top: 20vh;
@@ -178,18 +192,34 @@ picture{
   header::after {
     display: none;
   }
+  .photo {
+    max-width: 275px;
+  }
   .content {
     font-size: 1.3em;
     line-height: 4vh;
 }
 }
 
+@media screen and (max-width: 768px) {
+  .title{
+    font-size: 1.5em;
+  }
+  .content-wapper{
+    padding-left: 1.2em;
+  }
+}
+@media screen and (max-height: 900px){
+  .content {
+    line-height: 5vh;
+  }
+}
 @media screen and (max-height: 600px){
   html{
     height: auto;
   }
   .content {
-    line-height: 5vh;
+    line-height: 8vh;
   }
   .copyright{
     padding-top: 20%;
@@ -207,4 +237,8 @@ picture{
 }
 
 
-
+@media (orientation: landscape) {
+  .content {
+    line-height: 9vh;
+  }
+}
