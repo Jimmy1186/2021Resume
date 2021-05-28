@@ -12,7 +12,7 @@ function AllContent() {
           <figcaption>我的房間</figcaption>
         </figure>
         <h1 className="title">所有文章</h1>
-        <nav>
+        <nav className="all-content-nav">
           <ul>
             <li>
               <Link to="/NoFriend">為什麼我大學沒朋友??</Link>
