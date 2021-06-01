@@ -3,7 +3,6 @@ import Handsite from './../image/hand.jpg'
 
 function NameAndPhoto() {
   return (
-    <>
       <section className="side">
         <h3 className="photoName">
           <p>Jimmy Hung</p>
@@ -17,7 +16,6 @@ function NameAndPhoto() {
           </p>
         </div>
       </section>
-    </>
   );
 }
 

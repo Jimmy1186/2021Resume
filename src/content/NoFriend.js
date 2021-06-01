@@ -3,13 +3,13 @@ import withTeacher from "./../image/I-and-my-teacher.jpg";
 
 function NoFriend() {
   return (
-    <>
       <section className="content-wapper">
         <figure>
           <img className="photo" src={withTeacher} alt="教授與我的合照" />
           <figcaption>教授與我的合照</figcaption>
         </figure>
         <h1 className="title">為什麼我大學沒朋友??</h1>
+        <span className="post-date">21 May 2021</span>
         <article className="content">
           我大致分三個原因，其實這跟個性也有大的關係。<br></br>
           <ol>
@@ -32,7 +32,6 @@ function NoFriend() {
           ¯\_(ツ)_/¯
         </article>
       </section>
-    </>
   );
 }
 

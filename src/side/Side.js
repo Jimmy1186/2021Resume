@@ -2,15 +2,17 @@ import React,{useState} from "react";
 import Copyright from "./Copyright";
 import NameAndPhoto from "./NameAndPhoto";
 import Routers from "./Routers";
+import ThemeBtm from './ThemeBtm'
 
-function Side() {
+function Side({themeToggler}) {
   const [show, setshow] = useState(false)
 
 
 
   return (
-    <>
-      <header  id={show ? "header-active":''}>
+    <div>
+       <header  id={show ? "header-active":''}>
+        <ThemeBtm themeToggler={themeToggler}/>
         <NameAndPhoto />
         <Routers show={show} setshow={setshow}/>
         <Copyright />
@@ -20,7 +22,8 @@ function Side() {
              <div className={show ? 'toggle line2' : ''}></div>
              <div className={show ? 'toggle line3' : ''}></div>
         </div>
-    </>
+        
+    </div>
   );
 }
 

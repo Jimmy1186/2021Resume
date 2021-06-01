@@ -1,0 +1,39 @@
+#root {
+  background-color: #02475e;
+  color: #f3bda1;
+}
+a:visited {
+    color: #f3bda1;
+  }
+h1 {
+  color: #fefecc;
+}
+
+header::after {
+  background-color: #687980;
+}
+
+.burger div {
+  background-color: #fefecc;
+}
+.all-content-nav {
+  color: #fefecc;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background: #687980;
+    color: #f3bda1;
+  }
+
+  .liAmin a:visited {
+    color: #f3bda1;
+  }
+
+  .photoName {
+    color: #fefecc;
+  }
+  .intro {
+    color: #f3bda1;
+  }
+}
