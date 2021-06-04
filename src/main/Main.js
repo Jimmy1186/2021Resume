@@ -10,6 +10,7 @@ import AllContent from "../content/AllContent";
 import NoFriend from "../content/NoFriend";
 import Covid19AtHome from "../content/Covid19AtHome";
 import Birthday22 from "../content/Birthday22";
+import Stock from "../content/Stock";
 
 function Main() {
   return (
@@ -30,6 +31,9 @@ function Main() {
               </Route>
               <Route path="/Birthday22">
                   <Birthday22 />
+              </Route>
+              <Route path="/Stock">
+                  <Stock />
               </Route>
               <Route path="/">
                   <HomePage />
