@@ -10,7 +10,7 @@ import AllContent from "../content/AllContent";
 import NoFriend from "../content/NoFriend";
 import Covid19AtHome from "../content/Covid19AtHome";
 import Birthday22 from "../content/Birthday22";
-import Stock from "../content/Stock";
+import Metronome from "../content/Metronome";
 
 function Main() {
   return (
@@ -32,8 +32,8 @@ function Main() {
               <Route path="/Birthday22">
                   <Birthday22 />
               </Route>
-              <Route path="/Stock">
-                  <Stock />
+              <Route path="/Metronome">
+                  <Metronome />
               </Route>
               <Route path="/">
                   <HomePage />

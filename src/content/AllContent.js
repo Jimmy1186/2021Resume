@@ -24,7 +24,7 @@ function AllContent() {
             <Link to="/Birthday22">22的生日，學生時代的結束</Link>
             </li>
             <li>
-            <Link to="/Stock">股票分析面板</Link>
+            <Link to="/Metronome">節拍器</Link>
             </li>
           </ul>
         </nav>
