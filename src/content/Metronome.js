@@ -1,40 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import "./../style/metronome.css";
+import useTimer from "./../costomHook/useTimer";
+
 
 function Metronome() {
-  const [Bpm, setBpm] = useState(60);
-  const [beat, setbeat] = useState(4);
 
-  let handleScroll = (e) => {
-    setBpm(Number(e.target.value));
-  };
-  const handleIncream = () => {
-    if (Bpm >= 300) return;
-    setBpm((pre) => pre + 1);
-  };
-  const handleDecream = () => {
-    if (Bpm <= 20) return;
-    setBpm((pre) => pre - 1);
-  };
+  const[handleScroll,handleDecream,handleIncream,handleBeatDecream,handleBeatIncream,bpm,beat,text,setstarting,starting] = useTimer()
 
-  const handleBeatIncream = () => {
-    if (beat >= 16) return;
-    setbeat((pre) => pre + 1);
-  };
-  const handleBeatDecream = () => {
-    if (beat <= 0) return;
-    setbeat((pre) => pre - 1);
-  };
+
 
   return (
     <section className="content-wapper">
       <div className="container-metro">
         <div className="metronome">
           <div className="bpm-display">
-            <span className="tempo">{Bpm}</span>
+            <span className="tempo">{bpm}</span>
             <span className="bpm">BPM</span>
           </div>
-          <div className="tempo-text">Nice and steady</div>
+          <div className="tempo-text">{text}</div>
           <div className="tempo-settings">
             <div
               className="adjust-tempo-btn decrease-tempo"
@@ -57,7 +40,9 @@ function Metronome() {
               +
             </div>
           </div>
-          <div className="start-stop">START</div>
+          <div className="start-stop" onClick={() => setstarting(!starting)}>
+            {starting ? "STOP":"START"}
+          </div>
           <div className="measures">
             <div className="subtract-beats stepper" onClick={handleBeatDecream}>
               -
