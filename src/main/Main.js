@@ -11,6 +11,7 @@ import NoFriend from "../content/NoFriend";
 import Covid19AtHome from "../content/Covid19AtHome";
 import Birthday22 from "../content/Birthday22";
 import Metronome from "../content/Metronome";
+import WorkEx from "../content/WorkEx";
 
 function Main() {
   return (
@@ -34,6 +35,9 @@ function Main() {
               </Route>
               <Route path="/Metronome">
                   <Metronome />
+              </Route>
+              <Route path="/WorkEx">
+                  <WorkEx />
               </Route>
               <Route path="/">
                   <HomePage />

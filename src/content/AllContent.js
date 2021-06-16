@@ -26,6 +26,9 @@ function AllContent() {
             <li>
             <Link to="/Metronome">節拍器</Link>
             </li>
+            <li>
+            <Link to="/WorkEx">之前的工作經驗</Link>
+            </li>
           </ul>
         </nav>
       </section>
