@@ -12,6 +12,7 @@ import Covid19AtHome from "../content/Covid19AtHome";
 import Birthday22 from "../content/Birthday22";
 import Metronome from "../content/Metronome";
 import WorkEx from "../content/WorkEx";
+import WorkExInCainaDragon from "../content/WorkExInCainaDragon";
 
 function Main() {
   return (
@@ -38,6 +39,9 @@ function Main() {
               </Route>
               <Route path="/WorkEx">
                   <WorkEx />
+              </Route>
+              <Route path="/WorkExInCainaDragon">
+                  <WorkExInCainaDragon />
               </Route>
               <Route path="/">
                   <HomePage />
